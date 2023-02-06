@@ -12,7 +12,7 @@ function ProjectCard({ title, cardp,cardBtnTxt }) {
     <div className="desc">
       {<h2>{title}</h2>}
       {<p>{cardp}</p>}
-      {<a href="https://github.com/CcharlotteHh/webshopjustcss">{cardBtnTxt}</a>}
+      {<a classname="prBtn"href="https://github.com/CcharlotteHh/webshopjustcss">{cardBtnTxt}</a>}
    </div>
     </div>
 
