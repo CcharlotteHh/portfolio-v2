@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "../styles/form.scss";
 
 export const Form = () => {
@@ -8,32 +8,36 @@ export const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_dtum1os', 'template_cw5fwpu', form.current, 'N_Zr3-MstplYQvElG')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_dtum1os",
+        "template_cw5fwpu",
+        form.current,
+        "N_Zr3-MstplYQvElG"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
           e.target.reset();
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   return (
-    <div className='formContainer'>
-    <form ref={form} onSubmit={sendEmail}>
-    <div className="inputArea">
-      <label>Name</label>    
-      <input type="text" name="user_name" />
-      </div>
-     <div className="inputArea">
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      </div> 
-     <div className="inputArea test">
-      <label>Message</label>
-      <textarea name="message" />
-      </div>  
-      <input type="submit" value="Send" />
-    </form>
+    <div className="formContainer">
+      
+      <form ref={form} onSubmit={sendEmail}>
+      <h2>Contact Me</h2>
+        <input type="text" name="user_name" />
+        <input type="email" name="user_email" />
+
+        <textarea name="message" cols="30" />
+
+        <input className="contactBtn" type="submit" value="Send" />
+      </form>
     </div>
   );
 };

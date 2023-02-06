@@ -14,6 +14,7 @@ export default function Home() {
       <Landingpage />
 
       <section className="projectContainer">
+        <div className="cardContainer">
         <ProjectCard
           title="Webshop Frontend"
           cardp="In dit project heb ik een webshop uitgewerkt. Ik heb dit gedaan met CSS. Je kunt door de
@@ -44,6 +45,7 @@ export default function Home() {
                 website heen klikken en de verschillende pagina's bekijken."
           cardBtnTxt="Githublink"
         />
+        </div>
       </section>
       <section className="aboutMe">
         <AboutFig></AboutFig>

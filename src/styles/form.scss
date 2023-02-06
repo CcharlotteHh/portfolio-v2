@@ -3,35 +3,45 @@
 .formContainer {
   width: 50%;
   height: 100%;
+  background-color: $darkblue;
+  @include flexbox($justifyContent:center);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  h2 {
+    text-align: center;
+    font-size: $secondaryFontSize;
+    margin-top: 1%;
+  }
   form {
     @include flexbox(
       $direction: column,
       $alignItems: center,
-      $justifyContent: space-evenly
+      $justifyContent: space-between
     );
     height: 100%;
-   
-    .inputArea {
-      @include flexbox($direction: column, $alignItems: center);
-      width: 80%;}
-      .test{
-        height: 60%;
+    width: 90%;
+    color: #111;
+    padding: 1%;
+    
+input,
+textarea {
       width: 100%;
-
-      
-      label {
-        margin-bottom: 2%;
-      }
-
-      input {
-        color: black;
-        width:100%;
-      }
-      textarea {
-        color: black;
-        width: 75%;
-        height: 100%;
-      }
+      border: none;
+      outline: none;
+      background-color: $blue;
+      padding: 10px;
+      font-size: 0.9rem;
+      color: white;
+      border-radius: 0.4rem;
     }
+  textarea{
+    height: 30%;
   }
+  .contactBtn{
+    margin-bottom: 5%;
+  }
+
+  }
+
 }
