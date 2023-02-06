@@ -1,7 +1,0 @@
-@import "./variables.scss";
-@import "./mixins.scss";
-.projectContainer{
-    height: 100vh;
-    background:$cardGradient;
-    @include flexbox;
-}

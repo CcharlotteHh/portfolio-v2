@@ -1,6 +1,6 @@
 import React from 'react';
 import Typed from 'react-typed';
-import "../styles/landingpage.scss";
+import "../styles/sections.scss";
 
 function Landingpage() {
   

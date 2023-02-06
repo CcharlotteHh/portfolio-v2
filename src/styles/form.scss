@@ -1,0 +1,37 @@
+@import "mixins.scss";
+@import "variables.scss";
+.formContainer {
+  width: 50%;
+  height: 100%;
+  form {
+    @include flexbox(
+      $direction: column,
+      $alignItems: center,
+      $justifyContent: space-evenly
+    );
+    height: 100%;
+   
+    .inputArea {
+      @include flexbox($direction: column, $alignItems: center);
+      width: 80%;}
+      .test{
+        height: 60%;
+      width: 100%;
+
+      
+      label {
+        margin-bottom: 2%;
+      }
+
+      input {
+        color: black;
+        width:100%;
+      }
+      textarea {
+        color: black;
+        width: 75%;
+        height: 100%;
+      }
+    }
+  }
+}

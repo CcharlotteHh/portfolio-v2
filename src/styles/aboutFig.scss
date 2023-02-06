@@ -1,0 +1,8 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.aboutFig{
+    width: 60%;
+    
+    @include flexbox($justifyContent:center,$alignItems:center,$direction:column);
+}

@@ -1,0 +1,7 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.aboutText{
+    width: 40%;
+    @include flexbox($justifyContent:center,$alignItems:center,$direction:column);
+}
