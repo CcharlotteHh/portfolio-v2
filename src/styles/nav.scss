@@ -1,0 +1,50 @@
+@import "reset.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "breakpoints.scss";
+header {
+  background-color: rgba($color: $blue, $alpha: 0.5);
+
+  nav {
+    @include flexbox($justifyContent: space-between);
+    font-size: $secondaryFontSize;
+    height: 10%;
+
+    h1 {
+      margin: 1%;
+      @include md {
+        display: none;
+      }
+    }
+
+    .menu-items {
+      @include md {
+       display: none;
+
+       &.open{
+        @include flexbox($direction: column, $alignItems: center);
+        margin-top: 10%;
+        width: 100%;
+
+       }
+
+    
+        .navLink {
+            background: $cardGradient;
+          text-align: center;
+          &:hover{
+            opacity: 0.5;
+
+          }
+        }
+      }
+      @include flexbox($justifyContent: space-between);
+      width: 25%;
+      font-weight: 100;
+      margin: 1%;
+      li {
+        margin-right: 2%;
+      }
+    }
+  }
+}
