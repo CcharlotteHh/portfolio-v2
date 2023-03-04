@@ -3,5 +3,16 @@
 
 .aboutText{
     width: 40%;
-    @include flexbox($justifyContent:center,$alignItems:center,$direction:column);
+    height: 60%;
+    @include flexbox($justifyContent:space-evenly,$alignItems:center,$direction:column);
+    h2{
+        font-size: $primaryFontSize;
+    }
+    h5{
+        font-size: $secondaryFontSize;
+    }
+    p{
+        font-size: $cardPFontSize;
+        text-align: center;
+    }
 }

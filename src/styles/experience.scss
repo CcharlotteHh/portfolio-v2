@@ -1,0 +1,28 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.experienceBox{
+    width: 50%;
+    background: $expGradient;
+    text-align: center;
+
+
+.imgContainer {
+    width: 100%;
+    @include grid("grid-template-columns", "1fr 1fr", 0px, 0px);
+    @include grid("grid-template-rows", "200px 200px", 0px, 0px);
+    figure {
+        grid-column: span 1;
+        &:hover {
+            opacity: 1;
+            transition: all 300ms ease-in;
+            transform: scale(1.02);
+            background:$opositeGradient;
+          }
+ 
+    img{
+        @include imgContain;
+    }
+    }
+}
+  }

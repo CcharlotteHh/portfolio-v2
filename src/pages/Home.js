@@ -5,8 +5,11 @@ import ProjectCard from "../components/ProjectCard";
 
 import AboutFig from "../components/AboutFig";
 import AboutText from "../components/AboutText";
+import Experience from "../components/Experience";
 import Form from "../components/Form";
 import Map from "../components/Map";
+import Footer from "../components/Footer";
+
 
 export default function Home() {
   return (
@@ -60,6 +63,9 @@ export default function Home() {
     Ik vind het leuk om mijn ideeen om te zetten in een product en geinspireerd te worden door anderen."
         ></AboutText>
       </section>
+      <Experience>
+
+      </Experience>
 
       <section className="contactPage">
         <div className="contactContainer">
@@ -67,6 +73,7 @@ export default function Home() {
         <Map></Map>
         </div>
       </section>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

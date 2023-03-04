@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import "../styles/index.scss";
+
 function RootLayout() {
   return (
     <div className="root-layout">
@@ -17,7 +18,9 @@ function RootLayout() {
       <main>
         <Outlet/>
       </main>
+      
     </div>
+
   );
 }
 

@@ -32,17 +32,24 @@
 }
 
 .aboutMe {
-  @include flexbox($justifyContent: space-between);
+  @include flexbox($justifyContent: space-evenly,$alignItems:center);
   background-color: $blue;
-  height: $vh100;
+  height: 80vh;
   padding: 1%;
+}
+
+.experience{
+  width: 100%;
+  
+  background-color: $purple;
+  @include flexbox;
 }
 
 .contactPage {
   height: $vh100;
   background-color: $blue;
   margin: 0 auto;
-  @include flexbox($justifyContent: center);
+  @include flexbox($justifyContent: center, $alignItems:center);
   .contactContainer {
     @include flexbox($alignItems: center);
     border-radius: 0.5rem;
