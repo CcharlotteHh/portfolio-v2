@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "breakpoints.scss";
+
+footer{
+    width: 100%;
+    @include flexbox($justifyContent:center);
+      background-color:$blue;
+      padding-bottom:10px;
+     a{
+        @include flexbox($justifyContent:center);
+       i{
+       
+         font-size:3rem;
+       }
+     }
+   }

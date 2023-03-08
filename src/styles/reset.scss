@@ -17,8 +17,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html {
-    background: no-repeat center center fixed
-      linear-gradient(to bottom, $darkblue, $blue, $purple, $almostpurple);
+    background-color: $blue;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

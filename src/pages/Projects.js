@@ -3,7 +3,7 @@ export default function Projects(){
         <div className="home">
             <h2>Projects</h2>
             <p>
-                This is a projects page
+                This is a projects page/in progress
             </p>
         </div>
     )

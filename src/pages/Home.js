@@ -8,9 +8,12 @@ import AboutText from "../components/AboutText";
 import Experience from "../components/Experience";
 import Form from "../components/Form";
 import Map from "../components/Map";
-import Footer from "../components/Footer";
 
-
+import webFrontend from "../assets/img/frontend.PNG";
+import webBackend from "../assets/img/backend.png"
+import vnw from "../assets/img/vwn.png";
+import zodiac from "../assets/img/zodiac.png";
+import product from "../assets/img/eindproduct.jpg";
 export default function Home() {
   return (
     <div className="home">
@@ -19,33 +22,37 @@ export default function Home() {
       <section className="projectContainer">
       
         <ProjectCard
+        img={webFrontend}
           title="Webshop Frontend"
           cardp="In dit project heb ik een webshop uitgewerkt. Ik heb dit gedaan met CSS. Je kunt door de
                 website heen klikken en de verschillende pagina's bekijken."
+          link="https://github.com/CcharlotteHh/webshopjustcss"      
           cardBtnTxt="Githublink"
         />
         <ProjectCard
-          title="Webshop Frontend"
-          cardp="In dit project heb ik een webshop uitgewerkt. Ik heb dit gedaan met CSS. Je kunt door de
-                website heen klikken en de verschillende pagina's bekijken."
+          img={webBackend}
+          title="Webshop Backend"
+          cardp="In dit project heb ik de Backend van mijn webshop uitgewerkt, ik heb een inlog en registreer pagina gemaakt. Ik heb ook een CRUD gemaakt voor prodcten en categorie.
+          Dit is allemaal gekoppeld aan een database."
           cardBtnTxt="Githublink"
         />
         <ProjectCard
-          title="Webshop Frontend"
-          cardp="In dit project heb ik een webshop uitgewerkt. Ik heb dit gedaan met CSS. Je kunt door de
-                website heen klikken en de verschillende pagina's bekijken."
+          img={vnw}
+          title="Vrijwilligershuis"
+          cardp="Dit is een groepproject in samenwerking met 2 klasgenoten. We hebben een website gemaakt voor Vrijwilligershuis Nieuwegein.
+          Deze website word gebruikt voor het verwerken van donaties en aangeboden hulp aan vluchtelingen uit Oekraïne."
           cardBtnTxt="Githublink"
         />
         <ProjectCard
-          title="Webshop Frontend"
-          cardp="In dit project heb ik een webshop uitgewerkt. Ik heb dit gedaan met CSS. Je kunt door de
-                website heen klikken en de verschillende pagina's bekijken."
+          img={zodiac}
+          title="Starsigns Project"
+          cardp="In dit project heb ik een pagina gemaakt waar door sterrenbeelden heen geklikt kan worden. De data hiervoor staat in een JSON bestand."
           cardBtnTxt="Githublink"
         />
         <ProjectCard
-          title="Webshop Frontend"
-          cardp="In dit project heb ik een webshop uitgewerkt. Ik heb dit gedaan met CSS. Je kunt door de
-                website heen klikken en de verschillende pagina's bekijken."
+          img={product}
+          title="Eindproduct"
+          cardp="Een online website waar al mijn projecten en opdrachten voor het vak WEB uit het eerste jaar van mijn opleiding online staan weergegeven."
           cardBtnTxt="Githublink"
         />
         
@@ -73,7 +80,7 @@ export default function Home() {
         <Map></Map>
         </div>
       </section>
-      {/* <Footer></Footer> */}
+     
     </div>
   );
 }

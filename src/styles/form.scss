@@ -19,6 +19,9 @@
         width: 90%;
         display: grid;
         row-gap: 2rem;
+        @include md{
+          width: 100%;
+        }
 
 input,
 textarea {
@@ -31,14 +34,16 @@ textarea {
   color: white;
   border-radius: 0.4rem;
     }
-  textarea{
-    height: 100%;
+  .textForm{
+    height: 150px;
   }
   .contactBtn{
     margin: 0 auto;
     border-radius: 40px;
     width: 100%;
     margin-bottom: 4%;
+    cursor: pointer;
+
   }
 
   }

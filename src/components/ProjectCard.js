@@ -1,18 +1,18 @@
 import React from "react";
-import eevee from './eevee.png';
 import '../styles/projectCard.scss';
 
-function ProjectCard({ title, cardp,cardBtnTxt }) {
+
+function ProjectCard({ img, title, cardp,cardBtnTxt, link  }) {
   return (
     
     <div className="projectCard">
     <figure className="projectImg">
-      <img src={eevee} alt="projectimg" />
+      <img src={img} alt="projectimg" />
     </figure>
     <div className="desc">
       {<h2>{title}</h2>}
       {<p>{cardp}</p>}
-      {<a classname="prBtn"href="https://github.com/CcharlotteHh/webshopjustcss">{cardBtnTxt}</a>}
+      {<a classname="prBtn"href={link}  target="_blank"  rel="noreferrer">{cardBtnTxt}</a>}
    </div>
     </div>
 
