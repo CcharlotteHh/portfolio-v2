@@ -8,7 +8,7 @@
   height: $vh100;
   @include flexbox($direction: column);
 
-  @include md {
+  @include lg {
     width: 50%;
   }
 

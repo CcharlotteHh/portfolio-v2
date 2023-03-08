@@ -34,6 +34,7 @@ export default function Home() {
           title="Webshop Backend"
           cardp="In dit project heb ik de Backend van mijn webshop uitgewerkt, ik heb een inlog en registreer pagina gemaakt. Ik heb ook een CRUD gemaakt voor prodcten en categorie.
           Dit is allemaal gekoppeld aan een database."
+          link="https://github.com/CcharlotteHh/webshop_php_eindopdracht" 
           cardBtnTxt="Githublink"
         />
         <ProjectCard
@@ -41,18 +42,21 @@ export default function Home() {
           title="Vrijwilligershuis"
           cardp="Dit is een groepproject in samenwerking met 2 klasgenoten. We hebben een website gemaakt voor Vrijwilligershuis Nieuwegein.
           Deze website word gebruikt voor het verwerken van donaties en aangeboden hulp aan vluchtelingen uit Oekraïne."
+          link="https://github.com/CcharlotteHh/VrijwilligersHuis_Nieuwegein" 
           cardBtnTxt="Githublink"
         />
         <ProjectCard
           img={zodiac}
           title="Starsigns Project"
           cardp="In dit project heb ik een pagina gemaakt waar door sterrenbeelden heen geklikt kan worden. De data hiervoor staat in een JSON bestand."
+          link="https://github.com/CcharlotteHh/zodiac_signs"
           cardBtnTxt="Githublink"
         />
         <ProjectCard
           img={product}
           title="Eindproduct"
           cardp="Een online website waar al mijn projecten en opdrachten voor het vak WEB uit het eerste jaar van mijn opleiding online staan weergegeven."
+          link="https://u210547.gluweb.nl/eindopdracht"
           cardBtnTxt="Githublink"
         />
         
