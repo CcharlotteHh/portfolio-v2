@@ -67,7 +67,7 @@ export default function Home() {
 
       </Experience>
 
-      <section className="contactPage">
+      <section id="contact" class="contact">
         <div className="contactContainer">
         <Form></Form>
         <Map></Map>

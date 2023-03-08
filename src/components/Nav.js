@@ -9,7 +9,7 @@ function Nav(){
 
     function toggleMenu(){
         setIsOpen(!isOpen);
-        console.log('omg i hate everything lemme do drrss')
+        
     }
 
 

@@ -1,12 +1,13 @@
 @import "mixins.scss";
 @import "variables.scss";
+@import "breakpoints.scss";
 .formContainer {
-  width: 50%;
-  height: 100%;
-  background-color: $darkblue;
-  @include flexbox($justifyContent:center);
-  border-radius: 0.5rem;
-  overflow: hidden;
+  @include flexbox($direction: column, $alignItems: center);
+      padding: 1%;
+
+  @include md{
+    @include flexbox($justifyContent:space-between)
+  }
 
   h2 {
     text-align: center;
@@ -14,32 +15,30 @@
     margin-top: 1%;
   }
   form {
-    @include flexbox(
-      $direction: column,
-      $alignItems: center,
-      $justifyContent: space-between
-    );
     height: 100%;
-    width: 90%;
-    color: #111;
-    padding: 1%;
-    
+        width: 90%;
+        display: grid;
+        row-gap: 2rem;
+
 input,
 textarea {
-      width: 100%;
-      border: none;
-      outline: none;
-      background-color: $blue;
-      padding: 10px;
-      font-size: 0.9rem;
-      color: white;
-      border-radius: 0.4rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: $blue;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 0.4rem;
     }
   textarea{
-    height: 30%;
+    height: 100%;
   }
   .contactBtn{
-    margin-bottom: 5%;
+    margin: 0 auto;
+    border-radius: 40px;
+    width: 100%;
+    margin-bottom: 4%;
   }
 
   }

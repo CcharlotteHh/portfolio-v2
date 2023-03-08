@@ -62,23 +62,25 @@
   @include flexbox;
 }
 
-.contactPage {
+.contact {
   height: $vh100;
   width: 100%;
   background-color: $blue;
-  @include flexbox($justifyContent: center, $alignItems:center);
- 
+  @include flexbox ($direction:row,$alignItems:center,$justifyContent:center);
   .contactContainer {
-    @include flexbox($alignItems: center);
-    border-radius: 0.5rem;
-
-    height: 60%;
-    width: 70%;
     max-width: 1200px;
+    margin: auto;
+    height: 60%;
+    width: 100%;
+    @include grid("grid-template-columns", "1fr 1fr", 0px, 0px);
+    gap: 1.5rem;
+    color: white;
+    background-color: $darkblue;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
     @include md{
-      @include flexbox($direction:column);
-      width: 100%;
-      height: 90%;
+      @include grid("grid-template-columns", "1fr", 1rem, 1rem);
     }
   }
 }
