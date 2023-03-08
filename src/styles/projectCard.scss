@@ -1,60 +1,68 @@
-@import 'variables.scss';
-@import 'mixins.scss';
+@import "variables.scss";
+@import "mixins.scss";
+@import "breakpoints.scss";
 .projectCard {
-    opacity: 0.9;
-    width: 20%;
-  
-    height: $vh100;
-    @include flexbox($direction: column);
-    
-  
-    &:hover {
-      opacity: 1;
-      transition: all 300ms ease-in;
-      transform: scale(1.02);
-    }
+  opacity: 0.9;
+  width: 20%;
 
-  
-    .projectImg {
-      height: 50%;
-      img {
-        @include imgCover;
-      }
-    }
-  
-    .desc {
-      background: $cardGradient;
-      height: 50%;
-      color: $white;
-      width: 100%;
-      @include flexbox($direction: column, $alignItems: center,$justifyContent: flex-start);
-      position: relative;
-  
-      h2 {
-        font-size:$cardH2Size;
-        margin-top: 4%;
-        font-weight: bold;
-      }
-      p {
-        font-size: $cardPFontSize;
-        width: 80%;
-        height: 15%;
-        margin-top:15%;
-        text-align: center;
-      }
-  
-      a{
-        width: 60%;
-        position: absolute;
-        bottom: 0px;
-        @include flexbox($justifyContent:center, $alignItems:center);
-        color:white;
-        
-        margin-bottom: 10%;
-        width: 60%;
-        height: 15%;
-       @include prBtn;
 
-      }
+  height: $vh100;
+  @include flexbox($direction: column);
+
+  @include md{
+   width: 50%;
+  }
+
+  &:hover {
+    opacity: 1;
+    transition: all 300ms ease-in;
+    transform: scale(1.02);
+  }
+
+  .projectImg {
+    height: 50%;
+    img {
+      @include imgCover;
     }
   }
+
+  .desc {
+    background: $cardGradient;
+    height: 50%;
+    color: $white;
+    width: 100%;
+    @include flexbox(
+      $direction: column,
+      $alignItems: center,
+      $justifyContent: flex-start
+    );
+    position: relative;
+
+    h2 {
+      font-size: $cardH2Size;
+      margin-top: 4%;
+      font-weight: bold;
+      text-align: center;
+    }
+    p {
+      font-size: $cardPFontSize;
+      width: 80%;
+      height: 15%;
+      margin-top: 15%;
+      text-align: center;
+    }
+
+    a {
+      width: 60%;
+      position: absolute;
+      bottom: 0px;
+      @include flexbox($justifyContent: center, $alignItems: center);
+      color: white;
+
+      margin-bottom: 10%;
+      width: 60%;
+      height: 15%;
+      @include prBtn;
+    }
+  }
+}

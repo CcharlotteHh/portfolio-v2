@@ -1,11 +1,19 @@
 @import "mixins.scss";
 @import "variables.scss";
+@import "_breakpoints.scss";
 
 .AboutFig{
     margin-right:5%;
     width: 30%;
     height: 80%;
  border: 1px solid white;
+
+ @include md{
+    width: 50%;
+    height: 50%;
+ }
+
+
     @include flexbox($justifyContent:center,$alignItems:center,$direction:column);
 img{
     @include imgCover;

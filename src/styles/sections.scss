@@ -1,5 +1,7 @@
 @import "./variables.scss";
 @import "./mixins.scss";
+@import "breakpoints.scss";
+@import "reset.scss";
 
 .landingpage {
   height: 100vh;
@@ -9,15 +11,21 @@
 
   .animated-typing {
     font-size: $slider-font-size;
+    @include md{
+      font-size: $slider-font-size-responsive;
+    }
   }
 }
 
+
 .projectContainer {
-  height: 100vh;
+  height: 100%;
   width: 100%;
- .cardContainer{
-    @include flexbox;
- }
+  @include flexbox ($direction:row,$wrap:wrap);
+
+  
+ 
+
 }
 
 .landingpage {
@@ -28,6 +36,9 @@
 
   .animated-typing {
     font-size: $slider-font-size;
+    @include md{
+      font-size: $slider-font-size-responsive;
+    }
   }
 }
 
@@ -35,7 +46,13 @@
   @include flexbox($justifyContent: space-evenly,$alignItems:center);
   background-color: $blue;
   height: 80vh;
-  padding: 1%;
+  padding: 4%;
+  
+  @include md{
+    height: 100%;
+    @include flexbox($direction:column);
+
+  }
 }
 
 .experience{
@@ -47,9 +64,10 @@
 
 .contactPage {
   height: $vh100;
+  width: 100%;
   background-color: $blue;
-  margin: 0 auto;
   @include flexbox($justifyContent: center, $alignItems:center);
+ 
   .contactContainer {
     @include flexbox($alignItems: center);
     border-radius: 0.5rem;
@@ -57,5 +75,10 @@
     height: 60%;
     width: 70%;
     max-width: 1200px;
+    @include md{
+      @include flexbox($direction:column);
+      width: 100%;
+      height: 90%;
+    }
   }
 }
