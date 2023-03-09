@@ -28,18 +28,41 @@ export const Form = () => {
 
   return (
     <div class="contact-container">
-    <div className="formContainer">
-      
-      <form ref={form} onSubmit={sendEmail}>
-      <h2>Contact Me</h2>
-        <input type="text" name="user_name" />
-        <input type="email" name="user_email" />
+      <div className="formContainer">
+        <form ref={form} onSubmit={sendEmail}>
+          <h2>Contact Me</h2>
+          <input
+            type="text"
+            name="user_name"
+            tabIndex="1"
+            placeholder="name*"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            tabIndex="2"
+            placeholder="email*"
+            required
+          />
 
-        <textarea className="textForm" name="message" cols="60" />
+          <textarea
+            className="textForm"
+            name="message"
+            cols="60"
+            tabIndex="3"
+            placeholder="message*"
+            required
+          />
 
-        <input className="contactBtn" type="submit" value="Send" />
-      </form>
-    </div>
+          <input
+            className="contactBtn"
+            type="submit"
+            value="Send"
+            tabIndex="4"
+          />
+        </form>
+      </div>
     </div>
   );
 };

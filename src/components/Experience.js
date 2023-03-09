@@ -10,7 +10,7 @@ function Experience() {
     <section className="experience">
       
       <div className="experienceBox">
-        
+        <h2>I have experience with</h2>
         <div className="imgContainer">
           <figure>
             <img src={php} alt="php" />
@@ -28,7 +28,7 @@ function Experience() {
         </div>
       </div>
       <div className="experienceBox">
-        
+      <h2>New subjects I am learning about</h2>
         <div className="imgContainer">
           <figure>
             <img src={php} alt="php" />

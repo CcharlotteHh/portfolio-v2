@@ -16,6 +16,7 @@
   }
   form {
     height: 100%;
+    color:white;
         width: 90%;
         display: grid;
         row-gap: 2rem;
@@ -26,14 +27,18 @@
 input,
 textarea {
   width: 100%;
-  border: none;
+  border-color: transparent;
   outline: none;
   background-color: $blue;
   padding: 10px;
   font-size: 0.9rem;
   color: white;
   border-radius: 0.4rem;
+  &:focus{
+    border-color: white;
+  }
     }
+    
   .textForm{
     height: 150px;
   }
@@ -43,6 +48,9 @@ textarea {
     width: 100%;
     margin-bottom: 4%;
     cursor: pointer;
+    &:focus{
+      border-color: white;
+    }
 
   }
 

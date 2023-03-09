@@ -7,8 +7,12 @@ footer{
     @include flexbox($justifyContent:center);
       background-color:$blue;
       padding-bottom:10px;
+ 
      a{
         @include flexbox($justifyContent:center);
+        @include md{
+            margin-top:50px;
+          }
        i{
        
          font-size:3rem;

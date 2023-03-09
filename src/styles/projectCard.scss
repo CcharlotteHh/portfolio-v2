@@ -49,6 +49,10 @@
       height: 15%;
       margin-top: 15%;
       text-align: center;
+
+      @include s{
+        font-size: $responsiveCardFontSize;
+      }
     }
 
     a {

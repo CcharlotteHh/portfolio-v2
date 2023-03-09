@@ -1,10 +1,25 @@
 @import 'variables.scss';
 @import 'mixins.scss';
+@import 'breakpoints.scss';
 
 .experienceBox{
     width: 50%;
     background: $expGradient;
     text-align: center;
+    @include md{
+        width: 100%;
+        padding-bottom: 1%;
+    }
+
+    h2{
+        margin-bottom: 3%;
+        font-size: $secondaryFontSize;
+
+        @include md{
+            font-size: $abouth5FontSize;
+            margin-bottom: 2%;
+        }
+    }
 
 
 .imgContainer {

@@ -11,22 +11,16 @@
 
   .animated-typing {
     font-size: $slider-font-size;
-    @include md{
+    @include md {
       font-size: $slider-font-size-responsive;
     }
   }
 }
 
-
 .projectContainer {
   height: 100%;
   width: 100%;
-  @include flexbox ($direction:row,$wrap:wrap,$justifyContent:center);
-  
-
-  
- 
-
+  @include flexbox($direction: row, $wrap: wrap, $justifyContent: center);
 }
 
 .landingpage {
@@ -37,44 +31,50 @@
 
   .animated-typing {
     font-size: $slider-font-size;
-    @include md{
+    @include md {
       font-size: $slider-font-size-responsive;
     }
   }
 }
 
 .aboutMe {
-  @include flexbox($justifyContent: space-evenly,$alignItems:center);
+  @include flexbox($justifyContent: space-evenly, $alignItems: center);
   background-color: $blue;
   height: 80vh;
   padding: 4%;
-  
-  @include md{
-    height: 100%;
-    @include flexbox($direction:column);
 
+  @include md {
+    height: 100%;
+    @include flexbox($direction: column);
   }
 }
 
-.experience{
+.experience {
   width: 100%;
-  
+
   background-color: $purple;
   @include flexbox;
+
+  @include md{ 
+    @include flexbox($direction:column);
+  }
 }
 
 .contact {
   margin-top: 5%;
-  
+
   height: $vh100;
   width: 100%;
   background-color: $blue;
-  @include flexbox ($direction:row,$alignItems:center,$justifyContent:center);
+  @include flexbox(
+    $direction: row,
+    $alignItems: center,
+    $justifyContent: center
+  );
   .contactContainer {
-    
     max-width: 1200px;
     margin: auto;
- 
+
     @include grid("grid-template-columns", "1fr 1fr", 0px, 0px);
     gap: 1.5rem;
     color: white;
@@ -82,7 +82,7 @@
     border-radius: 0.5rem;
     overflow: hidden;
 
-    @include md{
+    @include md {
       @include grid("grid-template-columns", "1fr", 1rem, 1rem);
     }
   }
